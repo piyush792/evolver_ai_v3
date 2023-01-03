@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  min-height: 100vh;
+  background-color: #e5eaf2;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Inter', sans-serif; }
+
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: whitesmoke;
+  background-image: url(./images/login-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center; }
+  .login-wrapper .login-panel {
+    position: fixed;
+    width: 400px;
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+    padding: 40px;
+    top: 50%;
+    transform: translate(-50px, -50%);
+    right: 0;
+    background-color: #fff;
+    border-radius: 12px; }
+    .login-wrapper .login-panel h2 {
+      margin-bottom: 30px;
+      font-size: 27px; }
+    .login-wrapper .login-panel .login-box input.form-control {
+      height: 50px;
+      background: #f7f7f7;
+      border: 1px solid #edecec; }
+      .login-wrapper .login-panel .login-box input.form-control:focus {
+        box-shadow: none;
+        border-color: #0d6efd; }
+    .login-wrapper .login-panel .login-box .submit-btn button {
+      border-radius: 20px;
+      background-image: linear-gradient(to right, #bb61a3, #554f9f);
+      border: none;
+      height: 42px; }
+    @media (max-width: 575px) {
+      .login-wrapper .login-panel {
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffffeb; } }
+    @media (max-width: 425px) {
+      .login-wrapper .login-panel {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffffeb;
+        padding: 25px; }
+        .login-wrapper .login-panel form h2 {
+          text-align: center;
+          font-size: 23px; }
+        .login-wrapper .login-panel form input.form-control {
+          height: 43px !important; }
+        .login-wrapper .login-panel form input.form-check-input {
+          margin-top: 0.15rem; } }
+
+.mainNav {
+  box-shadow: 0 0.5rem 0.5rem -0.5rem #9b9b9b !important;
+  background-color: #fff; }
+  .mainNav .navbar-toggler {
+    font-size: 15px;
+    color: #000; }
+  .mainNav .navbar-brand {
+    padding: 0px;
+    margin-right: 0;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .mainNav .navbar-brand .side-menu-toggler {
+      display: none;
+      width: 30px;
+      margin-right: -16px; }
+    @media (max-width: 767px) {
+      .mainNav .navbar-brand .side-menu-toggler {
+        display: block; } }
+  .mainNav .navbar-nav li a {
+    color: #424242;
+    padding: 0.5rem 2.25rem; }
+    .mainNav .navbar-nav li a.active {
+      color: #554f9f;
+      font-weight: 500; }
+
+.card {
+  border: none; }
+  .card .card-header {
+    padding: 1.25rem 1rem 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #344050; }
+    .card .card-header h6 {
+      margin-bottom: 0px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+  .card .card-body {
+    padding: 0.7rem 1rem 1rem; }
+    .card .card-body select {
+      font-size: 13px; }
+    .card .card-body input.form-control {
+      font-size: 13px; }
+
+.dashboard-main-wrapper {
+  display: flex;
+  column-gap: 30px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4.5rem; }
+  .dashboard-main-wrapper .breadcrumb .card {
+    width: 100%; }
+    .dashboard-main-wrapper .breadcrumb .card .card-body {
+      z-index: 1; }
+      .dashboard-main-wrapper .breadcrumb .card .card-body h3 {
+        font-size: 22px;
+        color: #344050; }
+      .dashboard-main-wrapper .breadcrumb .card .card-body ul {
+        padding: 0;
+        margin: 0; }
+        .dashboard-main-wrapper .breadcrumb .card .card-body ul li {
+          list-style: none; }
+  .dashboard-main-wrapper .breadcrumb .bg-holder {
+    background-image: url("./images/corner-4.png");
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .dashboard-main-wrapper .left-sidebar {
+    width: 250px;
+    min-width: 250px;
+    position: fixed;
+    top: 72px;
+    left: 11px;
+    bottom: 0;
+    overflow: auto;
+    padding-right: 5px;
+    transition: all 0.5s;
+    /* Track */
+    /* Handle */ }
+    .dashboard-main-wrapper .left-sidebar h2.filters {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .dashboard-main-wrapper .left-sidebar .card .card-header svg {
+      width: 13px; }
+    .dashboard-main-wrapper .left-sidebar::-webkit-scrollbar {
+      width: 8px; }
+    .dashboard-main-wrapper .left-sidebar::-webkit-scrollbar-track {
+      background: #f1f1f1; }
+    .dashboard-main-wrapper .left-sidebar::-webkit-scrollbar-thumb {
+      background: #adadad;
+      border-radius: 8px; }
+  .dashboard-main-wrapper .right-content {
+    width: calc(100% - 250px);
+    margin-left: auto;
+    padding-left: 30px; }
+  .dashboard-main-wrapper.sidebar-opened .left-sidebar {
+    margin-left: 0; }
+  @media (max-width: 767px) {
+    .dashboard-main-wrapper .left-sidebar {
+      z-index: 1031;
+      background: #fff;
+      padding: 20px 10px 20px 15px;
+      top: 0;
+      left: 0;
+      margin-left: -261px; }
+      .dashboard-main-wrapper .left-sidebar h2.filters {
+        margin-bottom: 0; }
+      .dashboard-main-wrapper .left-sidebar .card {
+        margin-bottom: 0 !important; }
+        .dashboard-main-wrapper .left-sidebar .card .card-header {
+          padding: 1.25rem 0 0; }
+        .dashboard-main-wrapper .left-sidebar .card .card-body {
+          padding: 0.7rem 0 0; }
+    .dashboard-main-wrapper .right-content {
+      width: 100%;
+      padding-left: 0; } }
